@@ -1,23 +1,42 @@
 <!doctype html>
 <html>
   <head>
-    <title> 디아의 모든 것 </title>
+    <title> DIAMO - 디아의 모든 것 </title>
     <meta charset="utf-8">
     <style>
-      a{
-        color:black;
-        text-decoration: none;
-      }
-      .center{
+      .logo{
         display: block;
-        margin:auto;
-        width: 50%;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 30px;
+        width: 250px;
       }
+      .menubtn{
+        width: 30px;
+      }
+      .search{
+        display: block;
+        width: 50%;
+        resize: none;
+        font-size: 20px;
+        margin: auto;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 1fr 30px;
+      }
+
     </style>
   </head>
   <body>
-    <img src="menubtn.png" style="width:30px;" align="right"><br>
-    <a href="index.html"><img src="logo.png" class="center" style="width:300px; margin-top: 250px;"></a>
-    <input type="text" class="center" style="resize: none; font-size: 20px; margin-top: 50px" placeholder="아이템 명 혹은 룬 검색">
+    <div id="grid">
+      <div>
+        <h1><a href="index.html"><img src="logo.png" class="logo"></a></h1>
+        <input type="text" class="search" placeholder="아이템 명 혹은 룬 검색">
+      </div>
+      <div id="menubar">
+        <a href="menu.html"><img src="menubtn.png" class="menubtn"></a>
+      </div>
+    </div>
   </body>
 </html>
